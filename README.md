@@ -15,6 +15,14 @@
 
 roberta_table.py의 create_model에서 출력된 sequence_output 벡터를 적용할 태스크의 입력으로 사용하시면 됩니다. BERT 관련 코드는 BERT 깃헙의 tensorflow 코드를 활용하였습니다.
 
+
+모델 다운로드: http://pnuailab.synology.me/sharing/8JtBA5IUn
+
+
 출처 및 참고문헌
+
+
 KLUE-roberta: https://huggingface.co/klue
+
+
 BERT-github: https://github.com/google-research/bert
