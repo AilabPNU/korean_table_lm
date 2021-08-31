@@ -1,7 +1,7 @@
 # korean_table_lm
 한국어 테이블 언어모형
 
-본 결과물의 코드 및 모델은 "TAPAS를 이용한 사전학습 언어 모델 기반의 표 질의응답(http://hclt.kr/symp/?lnb=conference)"을 기반으로 하고 있습니다.
+본 결과물의 코드 및 모델은 TAPAS를 이용한 사전학습 언어 모델 기반의 표 질의응답(http://hclt.kr/symp/?lnb=conference)을 기반으로 하고 있습니다.
 
 ![table_qa 이미지](https://user-images.githubusercontent.com/89840435/131489094-f54a4df1-2f3e-41d1-952a-e5a7a39d3db2.png)
 
