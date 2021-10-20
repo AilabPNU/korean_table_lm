@@ -1,0 +1,5 @@
+# IDE
+.idea/
+
+# Dataset
+Table-Parser/dataset/
