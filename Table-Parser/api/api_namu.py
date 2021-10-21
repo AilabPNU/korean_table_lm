@@ -43,7 +43,17 @@ def ParseNuamuJsonDoc(srcPath:str, verbose:bool=False, printUnit:int=1000):
 
 
 def ParseParagraphFromFile(srcPath:str, verbose:bool=False, printUnit:int=1000):
+    '''
 
+    Args:
+        srcPath: namuwiki json path (origin data)
+        verbose: True - if you want to print processing count, set a 'True' otherwise 'False'
+        printUnit: set a print verbose log cycle
+
+    Returns:
+        paragraph List by document
+        Format - [ [paragraph index, table list, text list]... ]
+    '''
     if not os.path.exists(srcPath):
         print("Not Existed -", srcPath)
         return
