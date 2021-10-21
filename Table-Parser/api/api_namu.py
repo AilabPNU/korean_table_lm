@@ -36,6 +36,3 @@ def ParseNuamuJsonDoc(srcPath:str, verbose:bool=False, printUnit:int=1000):
         yield document
 
     print("END - Parsing,", srcPath)
-
-
-
