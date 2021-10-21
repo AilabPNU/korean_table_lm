@@ -8,8 +8,8 @@ from api_namu import *
 
 # Example
 if __name__ == "__main__":
-    srcPath = "../dataset/wikiDocData200302.json"
-     for retDoc in ParseNuamuJsonDoc(
+     srcPath = "../dataset/wikiDocData200302.json"
+     for retDoc in ParseParagraphFromFile(
              srcPath=srcPath,
              verbose=False):
-         print(retDoc)
+          print(retDoc)

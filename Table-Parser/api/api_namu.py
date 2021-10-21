@@ -20,6 +20,10 @@ def ParseNuamuJsonDoc(srcPath:str, verbose:bool=False, printUnit:int=1000):
         Type - dict()
         E.g. {'title': '!', 'text': ['#redirect 느낌표\n']}
     '''
+    if not os.path.exists(srcPath):
+        print("Not Existed -", srcPath)
+        return
+
     namuParser = NamuWikiParser(srcPath)
     print("INIT - Namuwiki Parser")
     print("PATH -", srcPath)
@@ -36,3 +40,28 @@ def ParseNuamuJsonDoc(srcPath:str, verbose:bool=False, printUnit:int=1000):
         yield document
 
     print("END - Parsing,", srcPath)
+
+
+def ParseParagraphFromFile(srcPath:str, verbose:bool=False, printUnit:int=1000):
+
+    if not os.path.exists(srcPath):
+        print("Not Existed -", srcPath)
+        return
+
+    namuParser = NamuWikiParser(srcPath)
+    print("INIT - Namuwiki Parser")
+    print("PATH -", srcPath)
+
+    docCnt = 0
+    for document in namuParser.ParsingJSON():
+        docCnt += 1
+
+        # Make paragraph list - [paragraph index, table list, text list]
+        paragraphList = namuParser.ParseTableAndDetailsFromDocument(document[DOC_TITLE],
+                                                                    document[DOC_TEXT])
+
+        if verbose and 0 == (docCnt % printUnit):
+            print('Processing...', document[DOC_TITLE], docCnt)
+            print(paragraphList)
+
+        yield paragraphList
