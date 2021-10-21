@@ -9,7 +9,7 @@ import pandas as pd
 import ijson
 
 ## Definition File
-from NamuWiki.NamuSyntax import NAMU_RE
+from namuSyntax import NAMU_RE
 
 ## Definition
 # Dict Def
