@@ -36,3 +36,6 @@
   - srcPath: 나무위키 JSON 파일
   - verbose: printUnit 단위마다 Log 출력여부
   - printUnit: verbose가 True일 경우 몇 번의 document마다 Log를 출력을 할 것인지 설정. 
+
+## 참고 문헌
+Table Head 추출을 위한 Heuristic - [A Scalable Hybrid Approach For Extracting Head Components From Web Tables](https://ieeexplore.ieee.org/document/1563981)
